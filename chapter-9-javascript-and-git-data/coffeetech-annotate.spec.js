@@ -4,7 +4,7 @@ describe( "GithubCtrl", function() {
 
     function generateMockPrompt() {
         prompter = { prompt: function() { return "ABC" } };
-        spyOn( prompter, "prompt" ).andCallThrough();
+        spyOn( prompter, "prompt" ).and.callThrough();
 
     }
 
@@ -24,13 +24,13 @@ describe( "GithubCtrl", function() {
                 cb( undefined, JSON.stringify( filename == "cities.json" ? CITIES : PORTLAND ) );
             } 
         };
-        spyOn( repo, "fork" ).andCallThrough();
-        spyOn( repo, "write" ).andCallThrough();
-        spyOn( repo, "createPullRequest" ).andCallThrough();
-        spyOn( repo, "read" ).andCallThrough();
+        spyOn( repo, "fork" ).and.callThrough();
+        spyOn( repo, "write" ).and.callThrough();
+        spyOn( repo, "createPullRequest" ).and.callThrough();
+        spyOn( repo, "read" ).and.callThrough();
 
         gh = { getRepo: function() {} };
-        spyOn( gh, "getRepo" ).andCallFake( function() {
+        spyOn( gh, "getRepo" ).and.callFake( function() {
             return repo;
         } );
         ghs = { create: function() { return gh; } };
@@ -46,6 +46,7 @@ describe( "GithubCtrl", function() {
                 '$login': function() {
                     return { then: function( cb ) {
                         cb( { name: "someUser",
+			      username: "xrd",
                               accessToken: "abcdefghi" } );
                     } };
                 }
@@ -70,7 +71,7 @@ describe( "GithubCtrl", function() {
             scope.city = PORTLAND
             var shop = { name: "A coffeeshop" }
             scope.annotate( shop );
-            expect( prompter.prompt.calls.length ).toEqual( 1 ); // <5>
+            expect( prompter.prompt ).toHaveBeenCalled(); 
             expect( scope.shopToAnnotate ).toBeTruthy();
             expect( scope.username ).not.toBeFalsy();
             expect( scope.annotation ).not.toBeFalsy();

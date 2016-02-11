@@ -11,7 +11,7 @@ describe( "GithubCtrl", function() {
         geo = { getCurrentPosition: function( success, failure ) {
             success( response );
         } };
-        spyOn( geo, "getCurrentPosition" ).andCallThrough();
+        spyOn( geo, "getCurrentPosition" ).and.callThrough();
     }
 
     var PR_ID = 12345;
@@ -30,13 +30,13 @@ describe( "GithubCtrl", function() {
                 cb( undefined, JSON.stringify( filename == "cities.json" ? CITIES : PORTLAND ) );
             } 
         };
-        spyOn( repo, "fork" ).andCallThrough();
-        spyOn( repo, "write" ).andCallThrough();
-        spyOn( repo, "createPullRequest" ).andCallThrough();
-        spyOn( repo, "read" ).andCallThrough();
+        spyOn( repo, "fork" ).and.callThrough();
+        spyOn( repo, "write" ).and.callThrough();
+        spyOn( repo, "createPullRequest" ).and.callThrough();
+        spyOn( repo, "read" ).and.callThrough();
 
         gh = { getRepo: function() {} };
-        spyOn( gh, "getRepo" ).andCallFake( function() {
+        spyOn( gh, "getRepo" ).and.callFake( function() {
             return repo;
         } );
         ghs = { create: function() { return gh; } };

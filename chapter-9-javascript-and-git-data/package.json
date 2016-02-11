@@ -1,28 +1,24 @@
 {
-    "name": "coffeetech-localauth",
-    "description": "Sample NodeJS for GitHub Auth",
+    "name": "coffeetech",
+    "description": "karma testing for coffeetech",
     "version": "0.0.1",
     "homepage": "http://spa.coffeete.ch",
     "repository": {
         "type": "git",
-        "url": "git://github.com/xrd/spa.coffeete.ch.git"
+        "url": "git://github.com/xrd/building-tools-with-github.git"
     },
     "author": "Chris Dawson <xrdawson@gmail.com> (https://github.com/xrd/)",
     "keywords": [
-        "auth",
-        "oauth",
-        "password",
-        "github",
-        "authorization",
-        "authentication",
-        "connect",
-        "express"
+        "github"
     ],
+    "scripts" : {
+	"test" : "karma start karma.config.js"
+    },
     "main": "./gihub-local-login.js",
     "dependencies": {
-        "express": "3.x",
-        "passport": "0.2.0",
-        "passport-github": "0.1.5"
+        "karma": "~0.12.0",
+        "karma-jasmine": "~0.2.0",
+        "karma-chrome-launcher": "0.2.2"
     }
 }
       
