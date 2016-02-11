@@ -1,0 +1,14 @@
+<html>
+<body>
+
+<h2>User <%= username %>'s last five gists</h2>
+
+<% tuples.each do |t| %>
+<div>
+<span><b><%= t[0] %></b>:</span>
+<span><%= h t[1] %></span>
+</div>
+<% end %>
+
+</body>
+</html>
