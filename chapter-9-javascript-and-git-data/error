@@ -1,0 +1,24 @@
+Chrome 32.0.1700 (Mac OS X 10.9.1) GithubCtrl #init should initialize, grabbing current city FAILED
+	Error: [$injector:modulerr] Failed to instantiate module coffeetech due to:
+	Error: [$injector:nomod] Module 'coffeetech' is not available! You either misspelled the module name or forgot to load it. If registering a module ensure that you specify the dependencies as the second argument.
+	http://errors.angularjs.org/1.2.10/$injector/nomod?p0=coffeetech
+	    at /Users/xrdawson/Projects/GithubBook/github.js.test/angular.js:78:12
+	    at /Users/xrdawson/Projects/GithubBook/github.js.test/angular.js:1529:17
+	    at ensure (/Users/xrdawson/Projects/GithubBook/github.js.test/angular.js:1454:38)
+	    at module (/Users/xrdawson/Projects/GithubBook/github.js.test/angular.js:1527:14)
+	    at /Users/xrdawson/Projects/GithubBook/github.js.test/angular.js:3620:22
+	    at Array.forEach (native)
+	    at forEach (/Users/xrdawson/Projects/GithubBook/github.js.test/angular.js:303:11)
+	    at loadModules (/Users/xrdawson/Projects/GithubBook/github.js.test/angular.js:3614:5)
+	    at Object.createInjector [as injector] (/Users/xrdawson/Projects/GithubBook/github.js.test/angular.js:3554:11)
+	    at workFn (/Users/xrdawson/Projects/GithubBook/github.js.test/angular-mocks.js:2101:52)
+	http://errors.angularjs.org/1.2.10/$injector/modulerr?p0=coffeetech&p1=Error%3A%20%5B%24injector%3Anomod%5D%20Module%20'coffeetech'%20is%20not%20available!%20You%20either%20misspelled%20the%20module%20name%20or%20forgot%20to%20load%20it.%20If%20registering%20a%20module%20ensure%20that%20you%20specify%20the%20dependencies%20as%20the%20second%20argument.%0Ahttp%3A%2F%2Ferrors.angularjs.org%2F1.2.10%2F%24injector%2Fnomod%3Fp0%3Dcoffeetech%0A%20%20%20%20at%20http%3A%2F%2Flocalhost%3A9876%2Fbase%2Fangular.js%3F1390611446000%3A78%3A12%0A%20%20%20%20at%20http%3A%2F%2Flocalhost%3A9876%2Fbase%2Fangular.js%3F1390611446000%3A1529%3A17%0A%20%20%20%20at%20ensure%20(http%3A%2F%2Flocalhost%3A9876%2Fbase%2Fangular.js%3F1390611446000%3A1454%3A38)%0A%20%20%20%20at%20module%20(http%3A%2F%2Flocalhost%3A9876%2Fbase%2Fangular.js%3F1390611446000%3A1527%3A14)%0A%20%20%20%20at%20http%3A%2F%2Flocalhost%3A9876%2Fbase%2Fangular.js%3F1390611446000%3A3620%3A22%0A%20%20%20%20at%20Array.forEach%20(native)%0A%20%20%20%20at%20forEach%20(http%3A%2F%2Flocalhost%3A9876%2Fbase%2Fangular.js%3F1390611446000%3A303%3A11)%0A%20%20%20%20at%20loadModules%20(http%3A%2F%2Flocalhost%3A9876%2Fbase%2Fangular.js%3F1390611446000%3A3614%3A5)%0A%20%20%20%20at%20Object.createInjector%20%5Bas%20injector%5D%20(http%3A%2F%2Flocalhost%3A9876%2Fbase%2Fangular.js%3F1390611446000%3A3554%3A11)%0A%20%20%20%20at%20workFn%20(http%3A%2F%2Flocalhost%3A9876%2Fbase%2Fangular-mocks.js%3F1388779666000%3A2101%3A52)
+	    at /Users/xrdawson/Projects/GithubBook/github.js.test/angular.js:78:12
+	    at /Users/xrdawson/Projects/GithubBook/github.js.test/angular.js:3648:15
+	    at Array.forEach (native)
+	    at forEach (/Users/xrdawson/Projects/GithubBook/github.js.test/angular.js:303:11)
+	    at loadModules (/Users/xrdawson/Projects/GithubBook/github.js.test/angular.js:3614:5)
+	    at Object.createInjector [as injector] (/Users/xrdawson/Projects/GithubBook/github.js.test/angular.js:3554:11)
+	    at workFn (/Users/xrdawson/Projects/GithubBook/github.js.test/angular-mocks.js:2101:52)
+	TypeError: Cannot call method 'init' of undefined
+	    at null.<anonymous> (/Users/xrdawson/Projects/GithubBook/github.js.test/coffeetech.spec.js:40:19)
