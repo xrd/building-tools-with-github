@@ -9,5 +9,14 @@ gem install bundler
 brew install icu4c || sudo apt-get install libicu-dev
 brew install cmake || sudo apt-get install cmake
 bundle
-bundle exec ruby hi.rb
+mkdir ../../sample-wiki
+pushd ../../sample-wiki
+git init .
+git add .
+popd
+bundle exec ruby hi.rb ../../sample-wiki
 ```
+
+This represents a slight change from the printed text. The last few lines
+create a new repository, then we pass it as parameter to the script (since this
+script already resides in a repository...)

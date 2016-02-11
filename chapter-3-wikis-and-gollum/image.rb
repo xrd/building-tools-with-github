@@ -4,13 +4,15 @@ require 'tempfile'
 require 'zip/zip'
 require 'rugged'
 
+set :bind, '0.0.0.0'
+
 def index( message=nil )
   response = File.read(File.join('.', 'index.html'))
   response.gsub!( "<!-- message -->\n", "<h2>Received and unpacked #{message}</h2>" ) if message
   response
 end
 
-wiki = Gollum::Wiki.new(".")
+wiki = Gollum::Wiki.new ARGV.shift
 get '/' do
   index()
 end
