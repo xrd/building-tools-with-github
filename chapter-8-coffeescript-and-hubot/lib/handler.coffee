@@ -28,7 +28,6 @@ exports.getSecureHash = ( body ) ->
         hmac.write( body )
         hmac.end()
         hash = hmac.read()
-        console.log "Hash: #{hash}"
         hash
 
 exports.prHandler = ( robot, req, res ) ->
@@ -52,7 +51,7 @@ exports.prHandler = ( robot, req, res ) ->
                                 users = robot.brain.users()
                                 sendPrRequest( robot, users, room, url, number )
                         else
-                                console.log "Invalid secret or no URL specified"
+                                a = 1 # null-op 
                 else
                         console.log "No pull request in here"
                         
