@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'octokit'
 
+set :bind, '0.0.0.0'
 set :views, "."
 
 helpers do
@@ -19,4 +20,11 @@ get '/:username' do |username|
     end
   end
   erb :index, locals: { :tuples => tuples, username: username }
+end
+
+get '/' do 
+  "Try adding a GitHub username to the URL..."
+end
+
+get "/favicon.ico" do
 end
