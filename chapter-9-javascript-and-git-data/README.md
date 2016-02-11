@@ -1,0 +1,1 @@
+A single page app hosted (almost) entirely on GitHub.
