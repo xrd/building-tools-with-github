@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Logged into GitHub"
+      android:layout_weight="0"
+      android:id="@+id/status" />
+
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Enter the blog repository"
+      android:id="@+id/repository"
+      android:layout_weight="0"
+      />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the blog title"
+        android:id="@+id/title"
+        android:layout_weight="0" />
+
+    <EditText
+      android:gravity="top"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:hint="Enter your blog post"
+      android:id="@+id/post"
+      android:layout_weight="1"
+      />
+  
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="0"
+      android:id="@+id/submit"
+      android:text="Send blog post"/>
+  
+</LinearLayout>
+
