@@ -1,3 +1,5 @@
+First, download the Android SDK and make sure you have Java installed.
+
 To build a debug app, use this command:
 
 ```
