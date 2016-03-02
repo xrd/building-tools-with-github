@@ -1,0 +1,34 @@
+﻿<Properties StartupItem="NancyApplication1/NancyApplication1.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NancyApplication1.Tests/Test.cs">
+    <Files>
+      <File FileName="NancyApplication1.Tests/Test.cs" Line="51" Column="5" />
+      <File FileName="NancyApplication1/Handler.cs" Line="28" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="NancyApplication1" expanded="True">
+            <Node name="NancyApplication1" expanded="True" />
+            <Node name="NancyApplication1.Tests" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="Test.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State name="__root__">
+          <Node name="NancyApplication1" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/ben/src/advanced-github-oreilly/support/commit-status/NancyApplication1/Handler.cs" line="28" column="1" />
+      <Breakpoint file="/Users/ben/src/advanced-github-oreilly/support/commit-status/NancyApplication1.Tests/Test.cs" line="52" column="9" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
