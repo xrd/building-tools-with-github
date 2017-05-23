@@ -46,8 +46,6 @@ This file should contain the same username and password and look like this:
 Then, to run the tests, use this command:
 
 ```
-GITHUB_HELPER_USERNAME=BurningOnUp \
-GITHUB_HELPER_PASSWORD=somethingOrOther \
 JAVA_HOME=~/bin/jdk1.7.0_79 \
 ANDROID_HOME=~/Android/Sdk \
 ./gradlew connectedTest
