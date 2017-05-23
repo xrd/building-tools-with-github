@@ -8,7 +8,12 @@ ANDROID_HOME=~/Android/Sdk \
 ./gradlew assembleDebug
 ```
 
-To run the unit tests, use a GitHub account which does not have 2-factor auth enabled.
+To run the unit tests, use a GitHub account which:
+
+* does not have 2-factor auth enabled.
+* has a Jekyll repository named `username.github.io` created for the user.
+
+Then, run this:
 
 ```
 GITHUB_HELPER_USERNAME=BurningOnUp \
