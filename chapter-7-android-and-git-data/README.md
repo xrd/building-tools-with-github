@@ -22,3 +22,6 @@ JAVA_HOME=~/bin/jdk1.7.0_79 \
 ANDROID_HOME=~/Android/Sdk \
 ./gradlew test
 ```
+
+This single test proves that our GitHub client Java code makes a new file inside the Jekyll repository
+and then views the published post.
