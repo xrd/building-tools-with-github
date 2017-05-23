@@ -1,3 +1,5 @@
+## Building the app
+
 First, download the Android SDK and make sure you have Java installed.
 
 To build a debug app, use this command:
@@ -7,6 +9,8 @@ JAVA_HOME=~/bin/jdk1.7.0_79 \
 ANDROID_HOME=~/Android/Sdk \
 ./gradlew assembleDebug
 ```
+
+## Running Unit Tests
 
 To run the unit tests, use a GitHub account which:
 
@@ -25,6 +29,8 @@ ANDROID_HOME=~/Android/Sdk \
 
 This single test proves that our GitHub client Java code makes a new file inside the Jekyll repository
 and then views the published post.
+
+## Running Espresso Tests
 
 To run the espresso test, you will need to create a `secrets.xml` file inside `app/src/main/res/values`.
 This file should contain the same username and password and look like this:
